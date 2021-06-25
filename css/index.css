@@ -1,0 +1,48 @@
+/*styles added for create button and it's  modal*/
+.btn-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+.Post-btn {
+  padding: 10px;
+  margin-right: 10px;
+  background-color: #eba83a;
+  font-weight: bold;
+  font-size: small;
+  border-radius: 6px;
+  border-color: #eba83a;
+  border-style: solid;
+}
+.Post-btn:hover {
+  background-color: #ecbb6b;
+  border-color: #ecbb6b;
+}
+.modal-contentPost {
+  width: 50%;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #888;
+}
+.inputTitle {
+  width: 70%;
+}
+.text-area {
+  height: 20em;
+  background-color: #e6e6e6;
+  border-color: #e6e6e6;
+  padding: 10px 0 0 10px;
+}
+.modalCreate {
+  background-color: #68b313;
+  color: #fff;
+  padding: 15px 0 15px 0;
+  font-size: 1.2em;
+  margin-top: 30px;
+  border: 0;
+  cursor: pointer;
+  width: 15%;
+  align-self: center;
+}
