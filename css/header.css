@@ -1,0 +1,144 @@
+html{
+    /* background image for home page */
+    background:url(../images/background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  /* styles added for header part i.e, title and buttons */
+  .titlepage {
+    position: relative;
+    top: 0;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .flexButtons{
+    display: flex;
+  }
+  button.topButtons {
+    width: 90px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 90%;
+    background: #0028ff;
+    color: #fff;
+    margin: 10px 10px 0px 0px;
+    border-radius: 10px;
+    border-style: double;
+    border-color: whitesmoke;
+  }
+  .topButtons:hover {
+    background-color: #1089ff;
+  }
+  .logo-title {
+    font-family: "Satisfy", cursive;
+    font-size: 50px;
+    color: #112fb4;
+    margin: auto;
+    text-decoration: none;
+    margin: 10px 10px 0px 10px;
+  }
+  .middleText {
+    font-family: "Marck Script", cursive;
+    margin-top: 0;
+    margin: 0 0 0px 10px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 200px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 20%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* styles added for signIn and signUp forms */
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  input {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    background-color: #e6e6e6;
+    color: #000;
+    border: #fff;
+  }
+  label {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+  }
+  .submit-btn {
+    background-color: #68b313;
+    color: #fff;
+    padding: 2%;
+    font-size: 1.2em;
+    margin-top: 10px;
+    border: 0;
+    cursor: pointer;
+  }
+  .heading {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+  }
+  hr {
+    width: 80%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .login-h5 {
+    display: inline;
+    
+  }
+  .signup-link{
+    font-size: 16px;
+    text-decoration: none;
+    color: blue;
+  }
+  .login-form{
+  text-align: center;
+  margin-top: 20px;
+  }
+  
