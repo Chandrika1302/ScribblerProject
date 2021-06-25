@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html>
+    
+    <head>
+        <link rel='stylesheet' href='./css/font.css'>
+        <link rel='stylesheet' href='./css/header.css'>
+        <link rel='stylesheet' href='./css/index.css'>
+        <title>Scribbler-Project</title>
+    </head>
+    
+    <body>
+        <!-- TODO: Include all your code for the header and home page here -->
+        <div class="header">
+        <div class="titlepage"> <a id="pageTitle" class="logo-title">Scri<span>BB</span>ler</a>
+            <p class="middleText"><span>Explore,</span><span> Imagine,</span> Create</p>
+        </div>
+        <div class="flexButtons">
+            <div><button class="topButtons" id="signUp">Sign Up</button>
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">x</span>
+                        <div class="getStarted-form">
+                            <form class="form" id="form">
+                                <h1 class="heading">Get Started</h1>
+                                <hr>
+                                <label class="labelText">Full Name</label>
+                                <input type="text" placeholder="Enter Full Name" required>
+                                <label class="labelText">Username</label>
+                                <input type="text" placeholder="Enter Username" required>
+                                <label id="password" class="labelText">Password</label>
+                                <input type="password" placeholder="Enter Password" required>
+                                <label class="labelText" id="confirm-password">Confirm Password</label>
+                                <input type="password" placeholder="Confirm Password" required>
+                                <button class="submit-btn">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><button class="topButtons" id="signIn">Sign In</button>
+                <div id="myModal1" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">x</span>
+                        <div class="welcomeBack-form">
+                            <form class="form">
+                                <h1 class="heading">Welcome Back!</h1>
+                                <hr>
+                                <label class="labelText">Username</label>
+                                <input type="text" placeholder="Enter Username" required>
+                                <label id="password1">Password</label>
+                                <input type="password" placeholder="Enter Password" required>
+                                <button class="submit-btn">Sign In</button>
+                                <div class="login-form">
+                                    <h5 class="login-h5">Not a member?</h5><span><a class="signup-link" href="#"> Sign
+                                            Up</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
-</head>
+    <div class="btn-post">
+        <div><button class="Post-btn" id="btn-all">All Posts</button></div>
+        <div><button class="Post-btn" id="btn-create">Create Post</button>
+            <div id="myModal-create" class="modal">
+                <!-- Modal content -->
+                <div class="modal-contentPost">
+                    <span class="close">x</span>
+                    <div class="create-form">
+                        <form class="form">
+                            <h1 class="heading">Pen Your Post</h1>
+                            <label class="labelText">Title:</label>
+                            <input type="text" class="inputTitle">
+                            <label class="labelText">Content:</label>
+                            <textarea class="text-area"></textarea>
+                            <button class="modalCreate">Create</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<body>
-    <!-- TODO: Include all your code for the header and home page here -->
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
+
+
 </body>
 
 </html>
