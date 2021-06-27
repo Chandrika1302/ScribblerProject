@@ -1,0 +1,28 @@
+html {
+  background-color: #FEA82F;
+  font-family: sans-serif;
+}
+h2 {
+  margin: 0;
+}
+.icon {
+  padding-left: 95%;
+}
+.hr-line{
+    width: 100%;
+}
+.modal-content{
+    width: 25%;
+}
+.modal-box{
+  padding-top: 18%;
+}
+
+.button-opt{
+  padding-top:30px;
+  padding-bottom: 20px;
+}
+.pad-btn{
+  padding: 10px 15% 10px 15%;
+}
+
