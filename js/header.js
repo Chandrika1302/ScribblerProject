@@ -28,3 +28,7 @@ window.onclick = function (event) {
     modal1.style.display = "none";
   }
 }
+var linkModal = document.getElementsByClassName("signup-link")[0].onclick = function () { //when user clicks the sign-up link 
+  modal.style.display = "block";//open the sign-up model
+  modal1.style.display = "none";//closes the sign-in model
+}
