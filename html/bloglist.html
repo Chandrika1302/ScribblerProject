@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/bloglist.css">
+   
+
+    <script src="https://kit.fontawesome.com/843f31a33f.js" crossorigin="anonymous"></script>
+    <title>Bloglists-page</title>
+    <!-- TODO: Include Font Awesome file here -->
+    <!-- TODO: Include Google Fonts file here -->
+</head>
+
+<body>
+    <!-- TODO: Include code for header here -->
+    <div class="header">
+        <div class="titlepage"> <a id="pageTitle" class="logo-title">Scri<span>BB</span>ler</a>
+            <p class="middleText"><span>Explore,</span><span> Imagine,</span> Create</p>
+        </div>
+        <div class="flexButtons">
+            <div><button class="topButtons" id="signUp">Sign Up</button>
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">x</span>
+                        <div class="getStarted-form">
+                            <form class="form" id="form">
+                                <h1 class="heading text-3xl font-extrabold">Get Started</h1>
+                                <hr class="hr-line">
+                                <label class="labelText ">Full Name</label>
+                                <input type="text" placeholder="Enter Full Name" required>
+                                <label class="labelText">Username</label>
+                                <input type="text" placeholder="Enter Username" required>
+                                <label id="password" class="labelText">Password</label>
+                                <input type="password" placeholder="Enter Password" required>
+                                <label class="labelText" id="confirm-password">Confirm Password</label>
+                                <input type="password" placeholder="Confirm Password" required>
+                                <button class="submit-btn">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><button class="topButtons" id="signIn">Sign In</button>
+                <div id="myModal1" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">x</span>
+                        <div class="welcomeBack-form">
+                            <form class="form">
+                                <h1 class="heading text-3xl font-extrabold">Welcome Back!</h1>
+                                <hr class="hr-line">
+                                <label class="labelText">Username</label>
+                                <input type="text" placeholder="Enter Username" required>
+                                <label id="password1">Password</label>
+                                <input type="password" placeholder="Enter Password" required>
+                                <button class="submit-btn">Sign In</button>
+                                <div class="login-form">
+                                    <h5 class="login-h5 font-bold">Not a member?</h5><span><a class="signup-link" href="#"> Sign
+                                            Up</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-content">
+        <div class="flex space-x-8 m-8 ">
+            <div class="bg-gray-100 rounded-2xl flex items-center justify-around pl-5">
+                <div class="flex items-center" >
+                    <p class="font-bold">Srishti Gupta</p>
+                </div>
+                <div class="bg-gray-200 rounded-r-2xl pl-6 ml-5 pr-6">
+                <div class="flex flex-row-reverse pt-4 pl-10 " id="delete-icon"><i class="fas fa-trash-alt">
+                    <div id="myModalBlog" class="modal modal-box">
+                        <div class="modal-content blog-content">
+                            <div class="delete-form">
+                                <h4 class="text-center">Are you sure you want to delete this post?</h4>
+                                <div class="flex justify-around button-opt">
+                                    <button type="button" class="yes-btn pad-btn bg-red-500 rounded-sm">Yes</button>
+                                    <button type="button" onclick="location.reload();"  class="no-Btn pad-btn bg-green-500 rounded-sm">No</button>       
+                                </div>         
+                            </div>
+                        </div>
+                    </div>
+                </i></div>
+                    <div class="block text-2xl pb-3 pt-4  ">
+                        <p class="font-bold">Hey there! This is post 1.</p>
+                    </div>
+                    <p class="pb-4">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                    <div class="flex flex-row-reverse pb-4"><i class="fas fa-ellipsis-h"></i></div>
+                    
+                </div>
+            </div>
+        
+        
+            <div class="bg-gray-100 rounded-2xl flex items-center justify-around pl-5">
+                
+                <div class="flex items-center" >
+                    <p class="font-bold">Srishti Gupta</p>
+                </div>
+        
+                <div class="bg-gray-200 rounded-r-2xl pl-6 ml-5 pr-6">
+                <div class="flex flex-row-reverse pt-4 pl-10" id="delete-icon1"><i class="fas fa-trash-alt">
+                    <div id="myModalBlog1" class="modal modal-box">
+                        <div class="modal-content blog-content">
+                            <div class="delete-form">
+                                <h4 class="text-center">Are you sure you want to delete this post?</h4>
+                                <div class="flex justify-around button-opt">
+                                    <button type="button" class="yes-btn pad-btn bg-red-500 rounded-sm">Yes</button>
+                                    <button type="button" onclick="location.reload();"  class="no-Btn pad-btn bg-green-500 rounded-sm">No</button>       
+                                </div>         
+                            </div>
+                        </div>
+                    </div>
+                </i></div>
+        
+                    <div class="block text-2xl pb-3 pt-4  ">
+                        <p class="font-bold">Hey there! This is post 2.</p>
+                        <span>
+                            <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        </span>
+                    </div>
+                    <p class="pb-4">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                    <div class="flex flex-row-reverse pb-4"><i class="fas fa-ellipsis-h"></i></div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="flex space-x-8 m-8 ">
+            <div class="bg-gray-100 rounded-2xl flex items-center justify-around pl-5">
+                <div class="flex items-center" >
+                    <p class="font-bold">Srishti Gupta</p>
+                </div>
+                <div class="bg-gray-200 rounded-r-2xl pl-6 ml-5 pr-6">
+                <div class="flex flex-row-reverse pt-4 pl-10 " id="delete-icon2"><i class="fas fa-trash-alt">
+                    <div id="myModalBlog2" class="modal modal-box">
+                        <div class="modal-content blog-content">
+                            <div class="delete-form">
+                                <h4 class="text-center">Are you sure you want to delete this post?</h4>
+                                <div class="flex justify-around button-opt">
+                                    <button type="button" class="yes-btn pad-btn bg-red-500 rounded-sm">Yes</button>
+                                    <button type="button" onclick="location.reload();"  class="no-Btn pad-btn bg-green-500 rounded-sm">No</button>       
+                                </div>         
+                            </div>
+                        </div>
+                    </div>
+                </i></div>
+                    <div class="block text-2xl pb-3 pt-4  ">
+                        <p class="font-bold">Hey there! This is post 1.</p>
+                    </div>
+                    <p class="pb-4">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                    <div class="flex flex-row-reverse pb-4"><i class="fas fa-ellipsis-h"></i></div>
+                    
+                </div>
+            </div>
+        
+        
+            <div class="bg-gray-100 rounded-2xl flex items-center justify-around pl-5">
+                
+                <div class="flex items-center" >
+                    <p class="font-bold">Srishti Gupta</p>
+                </div>
+        
+                <div class="bg-gray-200 rounded-r-2xl pl-6 ml-5 pr-6">
+                <div class="flex flex-row-reverse pt-4 pl-10" id="delete-icon3"><i class="fas fa-trash-alt">
+                    <div id="myModalBlog3" class="modal modal-box">
+                        <div class="modal-content blog-content">
+                            <div class="delete-form">
+                                <h4 class="text-center">Are you sure you want to delete this post?</h4>
+                                <div class="flex justify-around button-opt">
+                                    <button type="button" class="yes-btn pad-btn bg-red-500 rounded-sm">Yes</button>
+                                    <button type="button" onclick="location.reload();"  class="no-Btn pad-btn bg-green-500 rounded-sm">No</button>       
+                                </div>         
+                            </div>
+                        </div>
+                    </div>
+                </i></div>
+        
+                    <div class="block text-2xl pb-3 pt-4  ">
+                        <p class="font-bold">Hey there! This is post 2.</p>
+                    </div>
+                    <p class="pb-4">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                    <div class="flex flex-row-reverse pb-4"><i class="fas fa-ellipsis-h"></i></div>
+                    
+                </div>
+            </div>
+        </div>
+        
+      
+        
+        <div class="flex space-x-8 my-8 w-1/2 mx-48 xl:mx-96">
+            <div class="bg-gray-100 rounded-2xl flex items-center justify-around space-x-6">
+                <div class="flex items-center ml-5">
+                    <p class="font-bold">Srishti Gupta</p>
+                </div>
+        
+                <div class="bg-gray-200 rounded-r-2xl pl-6 pr-6 mr-5">
+                <div class="flex flex-row-reverse pt-4 pl-10" id="delete-icon4"><i class="fas fa-trash-alt">
+                    <div id="myModalBlog4" class="modal modal-box">
+                        <div class="modal-content blog-content">
+                            <div class="delete-form">
+                                <h4 class="text-center">Are you sure you want to delete this post?</h4>
+                                <div class="flex justify-around button-opt">
+                                    <button type="button" class="yes-btn pad-btn bg-red-500 rounded-sm">Yes</button>
+                                    <button type="button" onclick="location.reload();"  class="no-Btn pad-btn bg-green-500 rounded-sm">No</button>       
+                                </div>         
+                            </div>
+                        </div>
+                    </div>
+                </i></div>
+        
+                    <div class="block text-2xl pb-3 pt-4 ">
+                        <p class="font-bold">Hey there! This is post 5.</p>
+                    </div>
+                    <p class="pb-4">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                    <div class="flex flex-row-reverse pb-4"><i class="fas fa-ellipsis-h"></i></div>
+                    
+                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/bloglist.js"></script>
+</body>
+
+</html>
