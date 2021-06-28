@@ -1,0 +1,42 @@
+h2 {
+  margin: 0;
+}
+.icon {
+  padding-left: 95%;
+}
+.hr-line {
+  width: 100%;
+}
+.modal-content {
+  width: 25%;
+}
+.modal-box {
+  padding-top: 18%;
+}
+.fonth3 {
+  font-family: "Marck Script", cursive;
+}
+
+/* js classes*/
+.hidden {
+  visibility: hidden;
+}
+.heading-view-mode {
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+.heading-view-mode:focus {
+  border: none !important    ;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+.edit-shadow {
+  box-shadow: 0 0 10px 3px black;
+}
+.edit-para {
+  width: 100%;
+  min-height: 14rem;
+}
