@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/font.css">
+        <link rel="stylesheet" href="../css/post.css">
+        <script src="https://kit.fontawesome.com/843f31a33f.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="titlepage"> <a id="pageTitle" class="logo-title">Scri<span>BB</span>ler</a>
+                <p class="middleText"><span>Explore,</span><span> Imagine,</span> Create</p>
+            </div>
+            <div class="flexButtons">
+                <div><button class="topButtons" id="signIn">Sign In</button>
+                    <div id="myModal1" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">x</span>
+                            <div class="welcomeBack-form">
+                                <form class="form">
+                                    <h1 class="heading text-3xl font-extrabold">Welcome Back!</h1>
+                                    <hr class="hr-line">
+                                    <label class="labelText">Username</label>
+                                    <input type="text" placeholder="Enter Username" required>
+                                    <label id="password1">Password</label>
+                                    <input type="password" placeholder="Enter Password" required>
+                                    <button class="submit-btn">Sign In</button>
+                                    <div class="login-form">
+                                        <h5 class="login-h5 font-bold">Not a member?</h5><span><a class="signup-link" href="#"> Sign
+                                                Up</a></span>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div><button class="topButtons" id="signUp">Sign Up</button>
+                    <div id="myModal" class="modal">
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">x</span>
+                            <div class="getStarted-form">
+                                <form class="form" id="form">
+                                    <h1 class="heading text-3xl font-extrabold">Get Started</h1>
+                                    <hr class="hr-line">
+                                    <label class="labelText ">Full Name</label>
+                                    <input type="text" placeholder="Enter Full Name" required>
+                                    <label class="labelText">Username</label>
+                                    <input type="text" placeholder="Enter Username" required>
+                                    <label id="password" class="labelText">Password</label>
+                                    <input type="password" placeholder="Enter Password" required>
+                                    <label class="labelText" id="confirm-password">Confirm Password</label>
+                                    <input type="password" placeholder="Confirm Password" required>
+                                    <button class="submit-btn">Sign Up</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="font-sans">
+            <div class="text-center text-2xl mt-14 story">
+                <!-- <h2 >Thstorye legacy of Jimi Hendrix</h2> -->
+            </div>  
+            <div class="text-center text-2xl mt-14 story1" >
+                <!-- <h2 class='edit-h2'></h2> -->
+                <textarea class='edit-h2-area  heading-view-mode' id="main-heading-area" disabled='true'>The legacy of Jimi Hendrix</textarea>
+            </div>  
+             
+            <div class="flex justify-between text-md ml-20 mr-20 mt-12">
+                <h3 class="fonth3 p-1 text-2xl">Jimi</h3>
+                <button class=" bg-red-500 rounded p-1 text-white" onclick="saveBtn()" id="editBtn"><span id='test'>Edit</span> <i class="fas fa-edit text-md"></i></button>
+            </div>
+            <div class="m-12 ml-20 mr-20 text-justify story" id="para-container"><p class='edit-para heading-view-mode' id="edit-para">A lion was once sleeping in the jungle when a mouse started running up and down his body just for fun. This disturbed the lion’s sleep, and he woke up quite angry. He was about to eat the mouse when the mouse desperately requested the lion to set him free. “I promise you, I will be of great help to you someday if you save me.” The lion laughed at the mouse’s confidence and let him go.
+                One day, a few hunters came into the forest and took the lion with them. They tied him up against a tree. The lion was struggling to get out and started to whimper. Soon, the mouse walked past and noticed the lion in trouble. Quickly, he ran and gnawed on the ropes to set the lion free. Both of them sped off into the jungle.Moral of the Story
+                "A small act of kindness can go a long way."A lion was once sleeping in the jungle when a mouse started running up and down his body just for fun. This disturbed the lion’s sleep, and he woke up quite angry. He was about to eat the mouse when the mouse desperately requested the lion to set him free. “I promise you, I will be of great help to you someday if you save me.” The lion laughed at the mouse’s confidence and let him go.
+                One day, a few hunters came into the forest and took the lion with them. They tied him up against a tree. The lion was struggling to get out and started to whimper. Soon, the mouse walked past and noticed the lion in trouble. Quickly, he ran and gnawed on the ropes to set the lion free. Both of them sped off into the jungle.Moral of the Story
+                "A small act of kindness can go a long way."</p>
+            </div>
+        </div>
+
+        <div id="addEventNames" class="mb-10">
+            <div class="likeBlogButton mb-10">    
+                <button  class="block ml-20 mr-20 mt-2 bg-red-500 p-1 text-white rounded text-md font-sans" id= "likeBtn" onclick="postLiked()"><i class="fa fa-thumbs-up"></i> Like</button> 
+                <span id="likeCount" class="mr-20 ml-20 mt-5 text-xs font-mono">Be the first one to like this!</span>
+              </div>
+              <div>
+                <textarea  placeholder="Leave your comments..." id="userComments" value="" rows="5"  class="ml-20 mr-20 bg-gray-200 pt-4 pl-4 w-3/5"></textarea>
+                <!-- <div class="bg-grey-300 ml-20 mr-20 w-3/5" id="commentDiv"></div> -->
+                <button id="addList" class="block mx-20 my-2 bg-red-500 p-1 text-white rounded text-md " onclick="addComments(userComments)">Comment</button>
+              </div>
+        </div>
+      
+        <script src="../js/header.js"></script>
+        <script src="../js/post.js"></script>
+    </body>
+</html>
